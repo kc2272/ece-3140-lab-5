@@ -20,6 +20,10 @@ struct process_state{
 	unsigned int *sp;
 	unsigned int *orig_sp;
 	int n;
+	int is_rt;
+	int arrival_time;
+	int start_time;
+	int abs_deadline;
 	struct process_state * next;
 };
 
